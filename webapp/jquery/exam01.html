@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="/js/assets/js/jquery/jquery-1.12.4.js"></script>
+<title>Insert title here</title>
+
+
+</head>
+<body>
+	<div>
+		<button id="btn">자바스크립트 테스트 버튼</button>
+		<p id="display">이름출력영역</p>
+	</div>
+</body>
+
+<script type="text/javascript">
+	/*
+	window.onload = function() { //화면에 있는거 다 뜨고나서 기능 작동시켜라
+
+		var testButton = document.getElementById("btn");
+		var testArea = document.getElementById("display");
+		console.log(testArea);
+
+		//버튼을 클릭할때
+		testButton.onclick = function() {
+			testArea.innerHTML = "<h2>홍길동</h2>" //자바스크립트 사이에 html 넣는거
+		};
+	};
+	*/
+	
+	$("#btn").on("click", function(){
+		$("#display").html("홍길동");	
+		
+		/*
+		console.log("jquery 버튼 클릭");
+		var test = $("#display");
+		test.html("홍길동");
+		console.log(test);
+		*/
+		
+	});
+	
+	
+</script>
+
+
+
+</html>
