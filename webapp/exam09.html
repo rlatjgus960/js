@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="/jquery/jquery/jquery-1.12.4.js"></script>
+
+<title>Insert title here</title>
+</head>
+
+<body>
+
+	<script type="text/javascript">
+		//이름이 있는 함수(기명함수, 선언함수)
+
+		var plusSum = plus(3, 5);
+		console.log(plusSum);
+
+		var result01 = plus(2.7, 5.8);
+		console.log(result01);
+
+		var result02 = plus("안녕", "하세요");
+		console.log(result02);
+
+		//함수 정의 (자바스크립트 위에서부터 실행되지만 사실 두바퀴 돌면서 기명함수정의 있나 스캔하고 실행됨, 보통 함수 정의는 밑에 몰아둔다)
+		function plus(a, b) { //내부에서 쓸 변수 이름만 정해주면 됨
+			var sum = a + b;
+			return sum;
+		}
+
+		//이름이 없는 함수(익명함수) --> 이름이 없어서 바로 사용해야함, 한번만 사용 -->재사용을 위해서 변수에 할당해서 사용, 
+		var minus = function(a, b) {
+			var sum = a - b;
+			return sum;
+		}
+		console.log(typeof minus);
+
+		var result03 = minus(5, 4);
+		console.log(result03);
+
+		var result04 = minus(5, 2.4);
+		console.log(result04);
+
+		var result05 = minus("안녕", "하세요");
+		console.log(result05);
+	</script>
+
+</body>
+
+
+</html>

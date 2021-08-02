@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>Insert title here</title>
+</head>
+
+<body>
+
+	<h1>배열</h1>
+
+</body>
+
+<script type="text/javascript">
+	console.log("=================배열==================");
+
+	/*
+	var array = [];
+
+	array[0] = 1;
+	array[1] = 2.5;
+	array[2] = "안녕";
+	array[3] = "안녕";
+	array[4] = "hello!!!";
+
+	console.log(array);
+	console.log(array[0]);
+	console.log(array[1]);
+	console.log(array[2]);
+	console.log(array[3]);
+	console.log(array[4]);
+	
+	console.log("--------------------------------------");
+	 */
+
+	 /*
+	var array01 = [ 273, 32, 1.5, "안녕" ];
+	console.log(array01);
+
+	array01[4] = 52;
+	console.log(array01);
+
+	array01.push(100);
+	console.log(array01);
+
+	array01[3] = 50;
+	console.log(array01);
+
+	array01.pop(); //마지막거 빼버림
+	console.log(array01);
+
+	for (var i = 0; i < array01.length; i++) {
+		console.log(array01[i]);
+	}
+	console.log("--------------------------------------");
+	*/
+
+	var sum2 = function () { //얘는 순서 중요함, 실행 전에 있어야됨
+		return 3+4;
+	}
+	
+	var array02 = [ 273, 1.5, "안녕", 3 > 2, sum, sum2, function(){return "익명함수"}, [11,12,13]];
+	console.log(array02[0]);
+	console.log(array02[1]);
+	console.log(array02[2]);
+	console.log(array02[3]);
+	console.log(array02[4](3, 5));
+	console.log(array02[5]()); //파라미터 없으니 이대로 실행
+	console.log(array02[6]());
+	console.log(array02[7][0]);
+	console.log(array02[7][1]);
+	console.log(array02[7][2]);
+
+	//기명함수 --> 위치 상관없다
+	function sum(a, b) {
+		return a + b;
+	}
+</script>
+
+
+</html>
